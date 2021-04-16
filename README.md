@@ -1,22 +1,20 @@
-This repository contains data, code and pre-trained multilingual language models for Twitter.
+This is the **XLM-T** repository, wich data, code and pre-trained multilingual language models for Twitter.
 
-# XLM-R-Twitter
+# XLM-T - A Multilingual Language Model Toolkit for Twitter
 
-As explained in the reference paper, we make use of XLM-R-base () and continue pre-training on a large corpus of Twitter in multiple languages. This masked language model (XLM-R-Twitter) can be downloaded from 🤗HuggingFace [here](XXX). 
+As explained in the reference paper, we make start from [XLM-Roberta base](https://huggingface.co/transformers/model_doc/xlmroberta.html) and continue pre-training on a large corpus of Twitter in multiple languages. This masked language model, which we have named `twitter-xlm-roberta-base` in the 🤗Huggingface hub, can be downloaded from [here](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base). 
 
-**Extra**: A similar language model but based on RoBERTa and English-language Twitter data is available [here](https://huggingface.co/cardiffnlp/twitter-roberta-base). 
+**Note**: This Twitter-specific pretrained LM was pretrained following a similar strategy to its English-only counterpart, which was introduced as part of the [TweetEval](https://github.com/cardiffnlp/tweeteval) framework, and available [here](https://huggingface.co/cardiffnlp/twitter-roberta-base).
 
-We also provide task-specific models:
+We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for **cross-lingual sentiment analysis** (See #3):
 
-TOCOMPLETE XXX
+# 2 - Software
 
-## Code
+We include code with various functionalities to complement this release. Minimal start examples for feature extraction and adapter-based inference are available in this [notebook](https://github.com/cardiffnlp/xlingual-lms-twitter/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). 
 
-We include code with various functionalities around our released language models. TODO: Add code or links to code for finetuning, analysis, embeddings, etc.
+# 3 - Cross-lingual Sentiment Analysis: The Benchmark
 
-# Cross-lingual Sentiment Analysis: The Benchmark
-
-As part of our framework, we release a unified benchmark for cross-lingual sentiment analysis for XXX different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages available are XXX (TODO: Add languages/citations). The format for each dataset follows that of [TweetEval](https://github.com/cardiffnlp/tweeteval) with one line per tweet and label. 
+As part of our framework, we also release a unified benchmark for cross-lingual sentiment analysis for eight different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages available we include are: Arabic, English, French, German, Hindi, Italian, Portuguese and Spanish. The format for each dataset follows that of *TweetEval* with one line per tweet and label per line. 
 
 # Reference paper
 
@@ -24,7 +22,7 @@ If you use this repository in your research, please use the following `bib` entr
 
 ```
 @inproceedings{barbieri2021xlmtwitter,
-  title={{Multilingual Language Models in Twitter}},
+  title={{A Multilingual Language Model Toolkit for Twitter}},
   author={Barbieri, Francesco and  Espinosa-Anke, Luis and Camacho-Collados, Jose},
   booktitle={Submitted to ACL Demo},
   year={2021}
