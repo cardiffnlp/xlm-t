@@ -1,0 +1,26 @@
+{
+  "config": {
+    "adapter_residual_before_ln": false,
+    "invertible_adapter": {
+      "block_type": "nice",
+      "non_linearity": "relu",
+      "reduction_factor": 2
+    },
+    "leave_out": [],
+    "ln_after": false,
+    "ln_before": false,
+    "mh_adapter": false,
+    "non_linearity": "relu",
+    "original_ln_after": true,
+    "original_ln_before": true,
+    "output_adapter": true,
+    "reduction_factor": 16,
+    "residual_before_ln": true
+  },
+  "hidden_size": 768,
+  "model_class": "XLMRobertaModelWithHeads",
+  "model_name": null,
+  "model_type": "xlm-roberta",
+  "name": "xlm-t-sentiment",
+  "type": "text_task"
+}

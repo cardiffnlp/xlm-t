@@ -1,0 +1,18 @@
+{
+  "config": {
+    "activation_function": "tanh",
+    "head_type": "classification",
+    "label2id": {
+      "Neg": 0,
+      "Neu": 1,
+      "Pos": 2
+    },
+    "layers": 2,
+    "num_labels": 3
+  },
+  "hidden_size": 768,
+  "model_class": "XLMRobertaModelWithHeads",
+  "model_name": null,
+  "model_type": "xlm-roberta",
+  "name": "xlm-t-sentiment"
+}
