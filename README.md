@@ -10,7 +10,7 @@ We also provide task-specific models based on the [Adapter](https://adapterhub.m
 
 # 2 - Software
 
-We include code with various functionalities to complement this release. Minimal start examples for feature extraction and adapter-based inference are available in this [notebook](https://github.com/cardiffnlp/xlingual-lms-twitter/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). 
+We include code with various functionalities to complement this release. Minimal start examples for feature extraction and adapter-based inference are available in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). 
 
 # 3 - Cross-lingual Sentiment Analysis: The Benchmark
 
