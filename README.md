@@ -10,17 +10,21 @@ We also provide task-specific models based on the [Adapter](https://adapterhub.m
 
 # 1 - Code
 
-We include code with various functionalities to complement this release. Minimal start examples for feature extraction and adapter-based inference are available in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). 
+We include code with various functionalities to complement this release. We provide examples for, among others, feature extraction and adapter-based inference with language models in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). Also with examples for training and evaluating language models on multiple tweet classification tasks, compatible with `UMSAB` (see `#2`) and [TweetEval](https://github.com/cardiffnlp/tweeteval/tree/main/datasets) datasets.
+
+Using Huggingface's `pipelines`, obtaining predictions is as easy as:
 
 ```python
 from transformers import pipeline
 model_path = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 sentiment_task = pipeline("sentiment-analysis", model=model_path, tokenizer=model_path)
 sentiment_task("Huggingface es lo mejor! Awesome library 🤗😎")
->>> [{'label': 'Positive', 'score': 0.9343640804290771}]
+```
+```
+[{'label': 'Positive', 'score': 0.9343640804290771}]
 ```
 
-# 2 - Cross-lingual Sentiment Analysis: The Benchmark
+# 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
 
 As part of our framework, we also release a unified benchmark for cross-lingual sentiment analysis for eight different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages available we include are: Arabic, English, French, German, Hindi, Italian, Portuguese and Spanish. The format for each dataset follows that of *TweetEval* with one line per tweet and label per line. 
 
