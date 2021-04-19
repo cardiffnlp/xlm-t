@@ -8,11 +8,19 @@ As explained in the reference paper, we make start from [XLM-Roberta base](https
 
 We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for **cross-lingual sentiment analysis** (See #3):
 
-# 2 - Software
+# 1 - Code
 
 We include code with various functionalities to complement this release. Minimal start examples for feature extraction and adapter-based inference are available in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). 
 
-# 3 - Cross-lingual Sentiment Analysis: The Benchmark
+```python
+from transformers import pipeline
+model_path = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
+sentiment_task = pipeline("sentiment-analysis", model=model_path, tokenizer=model_path)
+sentiment_task("Huggingface es lo mejor! Awesome library 🤗😎")
+>>> [{'label': 'Positive', 'score': 0.9343640804290771}]
+```
+
+# 2 - Cross-lingual Sentiment Analysis: The Benchmark
 
 As part of our framework, we also release a unified benchmark for cross-lingual sentiment analysis for eight different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages available we include are: Arabic, English, French, German, Hindi, Italian, Portuguese and Spanish. The format for each dataset follows that of *TweetEval* with one line per tweet and label per line. 
 
