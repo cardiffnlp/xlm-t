@@ -23,6 +23,7 @@ sentiment_task("Huggingface es lo mejor! Awesome library 🤗😎")
 ```
 [{'label': 'Positive', 'score': 0.9343640804290771}]
 ```
+More details on how to run the models in the accompanying [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). For more details on training and evaluating models on TweetEval tweet classification tasks, [this notebook](https://github.com/cardiffnlp/tweeteval/blob/main/TweetEval_Tutorial.ipynb) provides additional support.
 
 # 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
 
