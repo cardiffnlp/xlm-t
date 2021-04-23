@@ -12,6 +12,8 @@ We also provide task-specific models based on the [Adapter](https://adapterhub.m
 
 We include code with various functionalities to complement this release. We provide examples for, among others, feature extraction and adapter-based inference with language models in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). Also with examples for training and evaluating language models on multiple tweet classification tasks, compatible with `UMSAB` (see `#2`) and [TweetEval](https://github.com/cardiffnlp/tweeteval/tree/main/datasets) datasets.
 
+## Perform inference with Huggingface's _pipelines_
+
 Using Huggingface's `pipelines`, obtaining predictions is as easy as:
 
 ```python
@@ -23,7 +25,18 @@ sentiment_task("Huggingface es lo mejor! Awesome library 🤗😎")
 ```
 [{'label': 'Positive', 'score': 0.9343640804290771}]
 ```
-More details on how to run the models in the accompanying [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). For more details on training and evaluating models on TweetEval tweet classification tasks, [this notebook](https://github.com/cardiffnlp/tweeteval/blob/main/TweetEval_Tutorial.ipynb) provides additional support.
+
+## Fine-tune `xlm-t` with _adapters_
+
+You can fine-tune an adapter built on top of your language model of choice by running the `src/adapter_finetuning.py` script, for example:
+
+```
+python3 src/adapter_finetuning.py --language spanish --model cardfiffnlp/twitter-xlm-roberta-base --seed 1 --lr 0.0001 --max_epochs 20
+```
+
+## Colab notebook
+
+For quick prototyping, you can direclty use the Colab notebook provided [here](https://colab.research.google.com/drive/1pGUCW250eHbzIQiENdVx2n65ZJADOi80?usp=sharing). For more details on training and evaluating models on TweetEval tweet classification tasks, [this notebook](https://github.com/cardiffnlp/tweeteval/blob/main/TweetEval_Tutorial.ipynb) provides additional support.
 
 # 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
 
@@ -59,7 +72,8 @@ If you use this repository in your research, please use the following `bib` entr
   year={2021}
 }
 ```
-If using UMSAB, please also cite their corresponding datasets.
+
+If using `UMSAB`, please also cite their corresponding datasets.
 
 # License
 
