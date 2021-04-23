@@ -27,7 +27,7 @@ More details on how to run the models in the accompanying [notebook](https://git
 
 # 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
 
-As part of our framework, we also release a unified benchmark for cross-lingual sentiment analysis for eight different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages available we include are: Arabic, English, French, German, Hindi, Italian, Portuguese and Spanish. The format for each dataset follows that of *TweetEval* with one line per tweet and label per line. 
+As part of our framework, we also release a unified benchmark for cross-lingual sentiment analysis for eight different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages included in the benchmark, as well as the datasets they are based on, are: Arabic (SemEval-2017, Rosenthal et al. 2017), English (SemEval-17, Rosenthal et al. 2017), French (Deft-2017, Benamara et al. 2017), German (SB-10K, Cieliebak et al. 2017), Hindi (SAIL 2015, Patra et al. 2015), Italian (Sentipolc-2016, Barbieri et al. 2016), Portuguese (SentiBR, Brum and Nunes, 2017) and Spanish (Intertass 2017, Díaz Galiano et al. 2018). The format for each dataset follows that of *TweetEval* with one line per tweet and label per line. 
 
 ## `UMSAB` Results / Leaderboard
 
