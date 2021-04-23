@@ -28,6 +28,24 @@ sentiment_task("Huggingface es lo mejor! Awesome library 🤗😎")
 
 As part of our framework, we also release a unified benchmark for cross-lingual sentiment analysis for eight different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages available we include are: Arabic, English, French, German, Hindi, Italian, Portuguese and Spanish. The format for each dataset follows that of *TweetEval* with one line per tweet and label per line. 
 
+## `UMSAB` Results / Leaderboard
+
+The following results (Macro F1 reported) correspond to XLM-R (Conneau et al. 2020) and XLM-Tw, the same model retrained on Twitter as explained in the reference paper. The two settings are monolingual (trained and tested in the same language) and multilingual (considering all languages for training).  Check the reference paper for more details on the setting and the metrics.
+
+|     | FT Mono | XLM-R Mono | XLM-Tw Mono | XLM-R Multi | XLM-Tw Multi |
+|-----|---------|-------------|-------------|--------------|--------------|
+| **Arabic**  |   46.0  |     63.6    |     67.7    |     64.3     |     66.9     |
+| **English**  |   50.9  |     68.2    |     66.9    |     68.5     |     70.6     |
+| **French**  |   54.8  |     72.0    |     68.2    |     70.5     |     71.2     |
+| **German**  |   59.6  |     73.6    |     76.1    |     72.8     |     77.3     |
+| **Hindi**  |   37.1  |     36.6    |     40.3    |     53.4     |     56.4     |
+| **Italian**  |   54.7  |     71.5    |     70.9    |     68.6     |     69.1     |
+| **Portuguese**  |   55.1  |     67.1    |     76.0    |     69.8     |     75.4     |
+| **Spanish**  |   50.1  |     65.9    |     68.5    |     66.0     |     67.9     |
+| *All lang.* |   *51.0*  |     *64.8*    |     *66.8*    |     *66.8*     |     *69.4*     |
+
+If you would like to have your results added to the leaderboard you can either submit a pull request or send an email to any of the paper authors with results and the predictions of your model. Please also submit a reference to a paper describing your approach.
+
 # Reference paper
 
 If you use this repository in your research, please use the following `bib` entry to cite the reference paper.
@@ -40,6 +58,8 @@ If you use this repository in your research, please use the following `bib` entr
   year={2021}
 }
 ```
+If using UMSAB, please also cite their corresponding datasets.
+
 # License
 
 This repository is released open-source but but restrictions may apply to individual datasets (which are derived from existing data) or Twitter (main data source). We refer users to the original licenses accompanying each dataset and Twitter regulations.
