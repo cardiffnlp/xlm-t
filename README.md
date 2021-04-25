@@ -62,7 +62,7 @@ If you would like to have your results added to the leaderboard you can either s
 
 ## Evaluating your system
 
-For evaluating your system, you simply need an individual prediction file for each of the languages. The format of the predictions file should be the same as the output examples in the predictions folder (one output label per line as per the original test file) and the files should be named *language.txt* (e.g. *arabic.txt*). The predictions included as an example in this repo correspond to the `all` dataset (*All lang.*).
+For evaluating your system according to Macro-F1, you simply need an individual prediction file for each of the languages. The format of the predictions file should be the same as the output examples in the predictions folder (one output label per line as per the original test file) and the files should be named *language.txt* (e.g. *arabic.txt*). The predictions included as an example in this repo correspond to the `all` dataset (*All lang.*).
 
 ### Example usage
 
