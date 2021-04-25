@@ -67,7 +67,7 @@ For evaluating your system, you simply need an individual prediction file for ea
 ## Example usage
 
 ```
-python evaluation_script.py
+python src/evaluation_script.py
 ```
 
 The script takes as input a set of test labels and the predictions from the "predictions" folder by default, but you can set this to suit your needs as optional arguments.
@@ -85,7 +85,7 @@ Three optional arguments can be modified:
 Evaluation script sample usage from the terminal with parameters:
 
 ```bash
-python evaluation_script.py --language arabic
+python src/evaluation_script.py --language arabic
 ```
 (this script would output the results for the Arabic dataset only)
 
