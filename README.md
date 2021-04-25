@@ -64,7 +64,7 @@ If you would like to have your results added to the leaderboard you can either s
 
 For evaluating your system, you simply need an individual prediction file for each of the languages. The format of the predictions file should be the same as the output examples in the predictions folder (one output label per line as per the original test file) and the files should be named *language.txt* (e.g. *arabic.txt*). The predictions included as an example in this repo correspond to the `all` dataset (*All lang.*).
 
-## Example usage
+### Example usage
 
 ```
 python src/evaluation_script.py
@@ -72,7 +72,7 @@ python src/evaluation_script.py
 
 The script takes as input a set of test labels and the predictions from the "predictions" folder by default, but you can set this to suit your needs as optional arguments.
 
-## Optional arguments
+### Optional arguments
 
 Three optional arguments can be modified:
 
