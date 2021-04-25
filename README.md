@@ -60,6 +60,26 @@ The following results (Macro F1 reported) correspond to XLM-R (Conneau et al. 20
 
 If you would like to have your results added to the leaderboard you can either submit a pull request or send an email to any of the paper authors with results and the predictions of your model. Please also submit a reference to a paper describing your approach.
 
+# 3 - Evaluating your system
+
+For evaluating your system, you simply need an individual predictions file for each of the tasks. The format of the predictions file should be the same as the output examples in the predictions folder (one output label per line as per the original test file). The predictions included as an example in this repo correspond to the `all` dataset (*All lang.*).
+
+## Example usage
+
+```
+python evaluation_script.py
+```
+
+The script takes as input a set of test labels and the predictions from the "predictions" folder by default, but you can set this to suit your needs as optional arguments.
+
+## Optional arguments
+
+Three optional arguments can be modified:
+
+- gold_path: Path to gold datasets. Default: `./data/sentiment`
+- predictions_path: Path to predictions directory. Default: `./predictions/sentiment`
+- language: Language to evaluate (`arabic`, `english` ... or `all`). Default: `all`
+
 # Reference paper
 
 If you use this repository in your research, please use the following `bib` entry to cite the reference paper.
