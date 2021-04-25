@@ -77,7 +77,9 @@ The script takes as input a set of test labels and the predictions from the "pre
 Three optional arguments can be modified:
 
 *--gold_path*: Path to gold datasets. Default: `./data/sentiment`
+
 *--predictions_path*: Path to predictions directory. Default: `./predictions/sentiment`
+
 *--language*: Language to evaluate (`arabic`, `english` ... or `all`). Default: `all`
 
 Evaluation script sample usage from the terminal with parameters:
