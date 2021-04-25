@@ -85,7 +85,7 @@ Three optional arguments can be modified:
 Evaluation script sample usage from the terminal with parameters:
 
 ```bash
-python src/evaluation_script.py --language arabic
+python src/evaluation_script.py --gold_path ./data/sentiment --predictions_path ./predictions/sentiment --language arabic
 ```
 (this script would output the results for the Arabic dataset only)
 
