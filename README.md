@@ -1,4 +1,4 @@
-This is the **XLM-T** repository, where you can find data, code and pre-trained multilingual language models for Twitter.
+This is the **XLM-T** repository, which includes data, code and pre-trained multilingual language models for Twitter.
 
 # XLM-T - A Multilingual Language Model Toolkit for Twitter
 
