@@ -11,7 +11,7 @@ def sent(text):
 inputs = gr.inputs.Textbox(lines=5, label="Input Text")
 
 outputs = [
-           gr.outputs.Label(label="sentiment"),
+           gr.outputs.Label(label="label"),
            gr.outputs.Label(label="Score")
 ]
 
