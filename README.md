@@ -40,9 +40,9 @@ For quick prototyping, you can direclty use the Colab notebooks we provide below
 
 | Notebook        | Description          | Colab Link   |
 |:----------------|:---------------------|:--|
-| 01: [Playgroud examples](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/XLM_T_Playground.ipynb) | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pGUCW250eHbzIQiENdVx2n65ZJADOi80?usp=sharing) |
-| 02: [Extract embeddings](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing&authuser=1) | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing) |
-| 03: [Sentiment prediction](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing&authuser=1) | How to classify sentiment on a textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
+| 01: [Playgroud examples](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/XLM_T_Playground.ipynb) | Minimal start examples | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pGUCW250eHbzIQiENdVx2n65ZJADOi80?usp=sharing) |
+| 02: [Extract embeddings](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing&authuser=1) | Extract embeddings from tweets | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing) |
+| 03: [Sentiment prediction](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing&authuser=1) | Predict sentiment | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
 | 04: Finetune a LM or classifier | COMING SOON | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
 
 # 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
