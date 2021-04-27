@@ -1,12 +1,12 @@
-This is the **XLM-T** repository, wich data, code and pre-trained multilingual language models for Twitter.
+This is the **XLM-T** repository, which includes data, code and pre-trained multilingual language models for Twitter.
 
 # XLM-T - A Multilingual Language Model Toolkit for Twitter
 
-As explained in the reference paper, we make start from [XLM-Roberta base](https://huggingface.co/transformers/model_doc/xlmroberta.html) and continue pre-training on a large corpus of Twitter in multiple languages. This masked language model, which we have named `twitter-xlm-roberta-base` in the 🤗Huggingface hub, can be downloaded from [here](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base). 
+As explained in the [reference paper](https://arxiv.org/abs/2104.12250), we make start from [XLM-Roberta base](https://huggingface.co/transformers/model_doc/xlmroberta.html) and continue pre-training on a large corpus of Twitter in multiple languages. This masked language model, which we have named `twitter-xlm-roberta-base` in the 🤗Huggingface hub, can be downloaded from [here](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base). 
 
 **Note**: This Twitter-specific pretrained LM was pretrained following a similar strategy to its English-only counterpart, which was introduced as part of the [TweetEval](https://github.com/cardiffnlp/tweeteval) framework, and available [here](https://huggingface.co/cardiffnlp/twitter-roberta-base).
 
-We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for **cross-lingual sentiment analysis** (See #3):
+We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for *cross-lingual sentiment analysis* (See #2):
 
 # 1 - Code
 
@@ -36,7 +36,14 @@ python3 src/adapter_finetuning.py --language spanish --model cardfiffnlp/twitter
 
 ## Colab notebook
 
-For quick prototyping, you can direclty use the Colab notebook provided [here](https://colab.research.google.com/drive/1pGUCW250eHbzIQiENdVx2n65ZJADOi80?usp=sharing). For more details on training and evaluating models on TweetEval tweet classification tasks, [this notebook](https://github.com/cardiffnlp/tweeteval/blob/main/TweetEval_Tutorial.ipynb) provides additional support.
+For quick prototyping, you can direclty use the Colab notebooks we provide below:
+
+| Notebook        | Description          | Colab Link   |
+|:----------------|:---------------------|:--|
+| 01: Playgroud examples | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pGUCW250eHbzIQiENdVx2n65ZJADOi80?usp=sharing) |
+| 02: Extract embeddings | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing) |
+| 03: Sentiment prediction | How to classify sentiment on a textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
+| 04: Finetune a LM or classifier | COMING SOON |  |
 
 # 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
 
@@ -60,14 +67,43 @@ The following results (Macro F1 reported) correspond to XLM-R (Conneau et al. 20
 
 If you would like to have your results added to the leaderboard you can either submit a pull request or send an email to any of the paper authors with results and the predictions of your model. Please also submit a reference to a paper describing your approach.
 
+## Evaluating your system
+
+For evaluating your system according to Macro-F1, you simply need an individual prediction file for each of the languages. The format of the predictions file should be the same as the output examples in the predictions folder (one output label per line as per the original test file) and the files should be named *language.txt* (e.g. *arabic.txt* or *all.txt* if evaluating all languages at once). The predictions included as an example in this repo correspond to xlm-t trained and evaluated on all languages (*All lang.*).
+
+### Example usage
+
+```
+python src/evaluation_script.py
+```
+
+The script takes as input a set of test labels and the predictions from the "predictions" folder by default, but you can set this to suit your needs as optional arguments.
+
+### Optional arguments
+
+Three optional arguments can be modified:
+
+*--gold_path*: Path to gold datasets. Default: `./data/sentiment`
+
+*--predictions_path*: Path to predictions directory. Default: `./predictions/sentiment`
+
+*--language*: Language to evaluate (`arabic`, `english` ... or `all`). Default: `all`
+
+Evaluation script sample usage from the terminal with parameters:
+
+```bash
+python src/evaluation_script.py --gold_path ./data/sentiment --predictions_path ./predictions/sentiment --language arabic
+```
+(this script would output the results for the Arabic dataset only)
+
 # Reference paper
 
-If you use this repository in your research, please use the following `bib` entry to cite the reference paper.
+If you use this repository in your research, please use the following `bib` entry to cite the [reference paper](https://arxiv.org/abs/2104.12250).
 
 ```
 @inproceedings{barbieri2021xlmtwitter,
   title={{A Multilingual Language Model Toolkit for Twitter}},
-  author={Barbieri, Francesco and  Espinosa-Anke, Luis and Camacho-Collados, Jose},
+  author={Barbieri, Francesco and Espinosa-Anke, Luis and Camacho-Collados, Jose},
   booktitle={Submitted to ACL Demo},
   year={2021}
 }
