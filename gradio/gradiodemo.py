@@ -21,9 +21,9 @@ description = "demo for Cardiff NLP XLM-T. To use it, simply add your text, or c
 article = "<p style='text-align: center'><a href='https://arxiv.org/abs/2104.12250'>XLM-T: A Multilingual Language Model Toolkit for Twitter</a> | <a href='https://github.com/cardiffnlp/xlm-t'>Github Repo</a></p>"
 examples = [
     ["Huggingface es lo mejor! Awesome library 🤗😎"]
-    ["نوال الزغبي (الشاب خالد ليس عالمي) هههههههه أتفرجي على ها الفيديو يا مبتدئة http vía @user"],
-    ["Royal: le président n'aime pas les pauvres? c'est n'importe quoi http …"],
-    ["@user korrekt! Verstehe sowas nicht..."]
+    ["كم يبعد القمر؟ 🌕"],
+    ["Nous avons passé un bon moment! 🎥"],
+    ["Acabo de pedir pollo frito 🐣"]
 ]
 
 gr.Interface(sent, inputs, outputs, title=title, description=description, article=article, examples=examples).launch()
