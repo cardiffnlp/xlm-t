@@ -104,7 +104,7 @@ If you use this repository in your research, please use the following `bib` entr
 @inproceedings{barbieri2021xlmtwitter,
   title={{A Multilingual Language Model Toolkit for Twitter}},
   author={Barbieri, Francesco and Espinosa-Anke, Luis and Camacho-Collados, Jose},
-  booktitle={Submitted to ACL Demo},
+  booktitle={arXiv preprint arXiv:2104.12250},
   year={2021}
 }
 ```
