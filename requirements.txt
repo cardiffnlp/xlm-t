@@ -2,3 +2,4 @@ gradio
 transformers
 torch
 sentencepiece
+protobuf
