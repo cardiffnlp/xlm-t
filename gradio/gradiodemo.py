@@ -20,7 +20,7 @@ title = "XLM-T"
 description = "demo for Cardiff NLP XLM-T. To use it, simply add your text, or click one of the examples to load them. Read more at the links below."
 article = "<p style='text-align: center'><a href='https://arxiv.org/abs/2104.12250'>XLM-T: A Multilingual Language Model Toolkit for Twitter</a> | <a href='https://github.com/cardiffnlp/xlm-t'>Github Repo</a></p>"
 examples = [
-    ["Huggingface es lo mejor! Awesome library 🤗😎"]
+    ["Huggingface es lo mejor! Awesome library 🤗😎"],
     ["كم يبعد القمر؟ 🌕"],
     ["Nous avons passé un bon moment! 🎥"],
     ["Acabo de pedir pollo frito 🐣"]
