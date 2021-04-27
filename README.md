@@ -34,16 +34,16 @@ You can fine-tune an adapter built on top of your language model of choice by ru
 python3 src/adapter_finetuning.py --language spanish --model cardfiffnlp/twitter-xlm-roberta-base --seed 1 --lr 0.0001 --max_epochs 20
 ```
 
-## Colab notebook
+## Notebooks
 
 For quick prototyping, you can direclty use the Colab notebooks we provide below:
 
 | Notebook        | Description          | Colab Link   |
 |:----------------|:---------------------|:--|
-| 01: Playgroud examples | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pGUCW250eHbzIQiENdVx2n65ZJADOi80?usp=sharing) |
-| 02: Extract embeddings | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing) |
-| 03: Sentiment prediction | How to classify sentiment on a textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
-| 04: Finetune a LM or classifier | COMING SOON |  |
+| 01: [Playgroud examples](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/XLM_T_Playground.ipynb) | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1pGUCW250eHbzIQiENdVx2n65ZJADOi80?usp=sharing) |
+| 02: [Extract embeddings](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing&authuser=1) | How to extract embeddings from textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Kzus4mK5w9qcS96M2hiUrxhM1HicfyxT?usp=sharing) |
+| 03: [Sentiment prediction](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing&authuser=1) | How to classify sentiment on a textual dataset | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
+| 04: Finetune a LM or classifier | COMING SOON | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
 
 # 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
 
