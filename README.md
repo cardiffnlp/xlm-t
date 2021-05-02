@@ -8,6 +8,9 @@ As explained in the [reference paper](https://arxiv.org/abs/2104.12250), we make
 
 We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for *cross-lingual sentiment analysis* (See #2):
 
+**New**
+* Gradio Web demo xlm-t Sentiment task [Gradio Demo](https://gradio.app/g/AK391/xlm-t)
+
 # 1 - Code
 
 We include code with various functionalities to complement this release. We provide examples for, among others, feature extraction and adapter-based inference with language models in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). Also with examples for training and evaluating language models on multiple tweet classification tasks, compatible with `UMSAB` (see `#2`) and [TweetEval](https://github.com/cardiffnlp/tweeteval/tree/main/datasets) datasets.
