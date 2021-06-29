@@ -16,8 +16,6 @@ We release the following language models in Hugging Face:
 
 - [**XLM-T Sentiment**](https://huggingface.co/cardiffnlp/twitter-roberta-base): The same XLM model above fine-tuned on our UMSAB multilingual sentiment analysis dataset (see #3).
 
-https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment
-
 # 2 - Code
 
 We include code with various functionalities to complement this release. We provide examples for, among others, feature extraction and adapter-based inference with language models in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). Also with examples for training and evaluating language models on multiple tweet classification tasks, compatible with `UMSAB` (see `#3`) and [TweetEval](https://github.com/cardiffnlp/tweeteval/tree/main/datasets) datasets.
