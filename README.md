@@ -6,11 +6,21 @@ As explained in the [reference paper](https://arxiv.org/abs/2104.12250), we make
 
 **Note**: This Twitter-specific pretrained LM was pretrained following a similar strategy to its English-only counterpart, which was introduced as part of the [TweetEval](https://github.com/cardiffnlp/tweeteval) framework, and available [here](https://huggingface.co/cardiffnlp/twitter-roberta-base).
 
-We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for *cross-lingual sentiment analysis* (See #2):
+We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for *cross-lingual sentiment analysis* (See #3):
 
-# 1 - Code
+# 1 - Models
 
-We include code with various functionalities to complement this release. We provide examples for, among others, feature extraction and adapter-based inference with language models in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). Also with examples for training and evaluating language models on multiple tweet classification tasks, compatible with `UMSAB` (see `#2`) and [TweetEval](https://github.com/cardiffnlp/tweeteval/tree/main/datasets) datasets.
+We release the following language models in Hugging Face:
+
+- [**XLM-T Language Model**](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment): XLM-R language model trained on 200M tweets for 30+ languages.
+
+- [**XLM-T Sentiment**](https://huggingface.co/cardiffnlp/twitter-roberta-base): The same XLM model above fine-tuned on our UMSAB multilingual sentiment analysis dataset (see #3).
+
+https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment
+
+# 2 - Code
+
+We include code with various functionalities to complement this release. We provide examples for, among others, feature extraction and adapter-based inference with language models in this [notebook](https://github.com/cardiffnlp/xlm-t/blob/main/notebooks/twitter-xlm-roberta-base.ipynb). Also with examples for training and evaluating language models on multiple tweet classification tasks, compatible with `UMSAB` (see `#3`) and [TweetEval](https://github.com/cardiffnlp/tweeteval/tree/main/datasets) datasets.
 
 ## Perform inference with Huggingface's _pipelines_
 
@@ -45,7 +55,7 @@ For quick prototyping, you can direclty use the Colab notebooks we provide below
 | 03: [Sentiment prediction](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing&authuser=1) | Predict sentiment | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1z56quMJuAHE0486az7SCGEEC3PP2xnq7?usp=sharing) |
 | 04: [Fine-tuning](https://colab.research.google.com/drive/1IAA1h8u53O1hi9807u7oOFuT3728N0-n?usp=sharing) | Fine-tune a model on custom data | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1IAA1h8u53O1hi9807u7oOFuT3728N0-n?usp=sharing) |
 
-# 2 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
+# 3 - `UMSAB`, the Unified Multilingual Sentiment Analysis Benchmark
 
 As part of our framework, we also release a unified benchmark for cross-lingual sentiment analysis for eight different languages. All datasets are framed as tweet classification with three labels (positive, negative and neutral). The languages included in the benchmark, as well as the datasets they are based on, are: Arabic (SemEval-2017, [Rosenthal et al. 2017](https://www.aclweb.org/anthology/S17-2088.pdf)), English (SemEval-17, [Rosenthal et al. 2017](https://www.aclweb.org/anthology/S17-2088.pdf)), French (Deft-2017, [Benamara et al. 2017](https://oatao.univ-toulouse.fr/19108/1/benamara_19108.pdf)), German (SB-10K, [Cieliebak et al. 2017](https://www.aclweb.org/anthology/W17-1106.pdf)), Hindi (SAIL 2015, [Patra et al. 2015](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.728.5241&rep=rep1&type=pdf)), Italian (Sentipolc-2016, [Barbieri et al. 2016](https://hal.inria.fr/hal-01414731/file/paper_026.pdf)), Portuguese (SentiBR, [Brum and Nunes, 2017](https://www.aclweb.org/anthology/L18-1658.pdf)) and Spanish (Intertass 2017, [Díaz Galiano et al. 2018](https://rua.ua.es/dspace/bitstream/10045/74613/1/PLN_60_04.pdf)). The format for each dataset follows that of *TweetEval* with one line per tweet and label per line. 
 
