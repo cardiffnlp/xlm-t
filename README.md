@@ -10,7 +10,7 @@ We also provide task-specific models based on the [Adapter](https://adapterhub.m
 
 # 1 - Models
 
-We release the following language models in Hugging Face:
+We release the following multilingual language models in Hugging Face:
 
 - [**XLM-T Language Model**](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment): XLM-R language model trained on 200M tweets for 30+ languages.
 
