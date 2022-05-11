@@ -110,10 +110,10 @@ If you use this repository in your research, please use the following `bib` entr
 
 ```
 @inproceedings{barbieri2021xlmtwitter,
-  title={{A Multilingual Language Model Toolkit for Twitter}},
+  title={{XLM-T: Multilingual Language Models in Twitter for Sentiment Analysis and Beyond}},
   author={Barbieri, Francesco and Espinosa-Anke, Luis and Camacho-Collados, Jose},
-  booktitle={arXiv preprint arXiv:2104.12250},
-  year={2021}
+  booktitle={Proceedings of LREC},
+  year={2022}
 }
 ```
 
