@@ -4,7 +4,7 @@ This is the **XLM-T** repository, which includes data, code and pre-trained mult
 
 As explained in the [reference paper](https://arxiv.org/abs/2104.12250), we make start from [XLM-Roberta base](https://huggingface.co/transformers/model_doc/xlmroberta.html) and continue pre-training on a large corpus of Twitter in multiple languages. This masked language model, which we named `twitter-xlm-roberta-base` in the 🤗Huggingface hub, can be downloaded from [here](https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base). 
 
-**Note**: This Twitter-specific pretrained LM was pretrained following a similar strategy to its English-only counterpart, which was introduced as part of the [TweetEval](https://github.com/cardiffnlp/tweeteval) framework, and available [here](https://huggingface.co/cardiffnlp/twitter-roberta-base).
+**Note**: This Twitter-specific pretrained LM was pretrained following a similar strategy to its English-only counterpart, which was introduced as part of the [TweetEval](https://github.com/cardiffnlp/tweeteval) framework, and available [here](https://huggingface.co/cardiffnlp/twitter-roberta-base). All models, including this multilingual one, have been integrated into the [TweetNLP framework](https://github.com/cardiffnlp/tweetnlp).
 
 We also provide task-specific models based on the [Adapter](https://adapterhub.ml/) technique, fine-tuned for *cross-lingual sentiment analysis* (See #3):
 
