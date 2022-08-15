@@ -109,12 +109,19 @@ python src/evaluation_script.py --gold_path ./data/sentiment --predictions_path 
 If you use this repository in your research, please use the following `bib` entry to cite the [reference paper](https://arxiv.org/abs/2104.12250).
 
 ```
-@inproceedings{barbieri2021xlmtwitter,
-  title={{XLM-T: Multilingual Language Models in Twitter for Sentiment Analysis and Beyond}},
-  author={Barbieri, Francesco and Espinosa-Anke, Luis and Camacho-Collados, Jose},
-  booktitle={Proceedings of LREC},
-  year={2022}
+@InProceedings{barbieri-espinosaanke-camachocollados:2022:LREC,
+  author    = {Barbieri, Francesco  and  Espinosa Anke, Luis  and  Camacho-Collados, Jose},
+  title     = {XLM-T: Multilingual Language Models in Twitter for Sentiment Analysis and Beyond},
+  booktitle      = {Proceedings of the Language Resources and Evaluation Conference},
+  month          = {June},
+  year           = {2022},
+  address        = {Marseille, France},
+  publisher      = {European Language Resources Association},
+  pages     = {258--266},
+  abstract  = {Language models are ubiquitous in current NLP, and their multilingual capacity has recently attracted considerable attention. However, current analyses have almost exclusively focused on (multilingual variants of) standard benchmarks, and have relied on clean pre-training and task-specific corpora as multilingual signals. In this paper, we introduce XLM-T, a model to train and evaluate multilingual language models in Twitter. In this paper we provide: (1) a new strong multilingual baseline consisting of an XLM-R (Conneau et al. 2020) model pre-trained on millions of tweets in over thirty languages, alongside starter code to subsequently fine-tune on a target task; and (2) a set of unified sentiment analysis Twitter datasets in eight different languages and a XLM-T model trained on this dataset.},
+  url       = {https://aclanthology.org/2022.lrec-1.27}
 }
+
 ```
 
 If using `UMSAB`, please also cite their corresponding datasets.
